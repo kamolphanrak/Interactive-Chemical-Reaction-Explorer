@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFB74D; /* สีส้ม */
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #d32f2f; /* สีแดง */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.molecule-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.molecule {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #d32f2f;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reaction-area {
+    min-height: 200px;
+    border: 2px dashed #d32f2f;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.8em;
+    color: #333;
+}

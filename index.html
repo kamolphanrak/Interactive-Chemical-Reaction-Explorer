@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Chemical Reaction Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Chemical Reaction Explorer</h1>
+            <p>ลากและวางโมเลกุลเพื่อสร้างปฏิกิริยาเคมี</p>
+        </header>
+
+        <section class="molecule-area">
+            <div class="molecule" id="H2O" draggable="true" ondragstart="drag(event)">
+                H<sub>2</sub>O (น้ำ)
+            </div>
+            <div class="molecule" id="CO2" draggable="true" ondragstart="drag(event)">
+                CO<sub>2</sub> (คาร์บอนไดออกไซด์)
+            </div>
+            <div class="molecule" id="O2" draggable="true" ondragstart="drag(event)">
+                O<sub>2</sub> (ออกซิเจน)
+            </div>
+        </section>
+
+        <section class="reaction-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>ลากโมเลกุลที่นี่เพื่อสร้างปฏิกิริยาเคมี</h2>
+        </section>
+
+        <section id="result">
+            <h3>ผลลัพธ์</h3>
+            <p id="reaction-output">ยังไม่มีปฏิกิริยาเกิดขึ้น</p>
+        </section>
+
+        <footer>
+            <p>Interactive Chemical Reaction Explorer © 2024</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
